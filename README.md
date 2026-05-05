@@ -72,3 +72,20 @@ Total Supply: **1,000,000 GTK**
 - **Treasury:** 30% = 300,000 GTK  
 - **Community Airdrop:** 20% = 200,000 GTK  
 - **Liquidity:** 10% = 100,000 GTK  
+
+## Governance Execution Log
+
+1. Deploy GovernanceToken.
+2. Deploy TimelockController with 2-day delay.
+3. Deploy MyGovernor with token and timelock.
+4. Grant PROPOSER_ROLE to Governor.
+5. Set executor role for Timelock.
+6. Delegate voting power.
+7. Create proposal.
+8. Move blocks to voting start.
+9. Cast vote.
+10. Move blocks to voting end.
+11. Queue proposal in Timelock.
+12. Wait 2-day timelock delay.
+13. Execute proposal.
+14. Verify result.
