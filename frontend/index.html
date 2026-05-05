@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DAO Governance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DAO Governance dApp</h1>
+
+    <button id="connectBtn">Connect Wallet</button>
+
+    <div class="card">
+      <h2>Account Info</h2>
+      <p>Account: <span id="account">-</span></p>
+      <p>Token Balance: <span id="balance">-</span></p>
+      <p>Voting Power: <span id="votingPower">-</span></p>
+      <p>Delegate: <span id="delegate">-</span></p>
+    </div>
+
+    <div class="card">
+      <h2>Delegate Votes</h2>
+      <input id="delegateAddress" placeholder="Delegate address">
+      <button id="delegateBtn">Delegate</button>
+    </div>
+
+    <div class="card">
+      <h2>Active Proposal</h2>
+      <input id="proposalId" placeholder="Proposal ID">
+      <button id="voteAgainstBtn">Vote Against</button>
+      <button id="voteForBtn">Vote For</button>
+      <button id="voteAbstainBtn">Abstain</button>
+    </div>
+
+    <div class="card">
+  <h2>Box Governance Proposal</h2>
+
+  <button id="createBoxProposalBtn">Create Proposal: Box.store(42)</button>
+  <button id="moveToVotingBtn">Move to Voting</button>
+  <button id="endVotingBtn">End Voting</button>
+  <button id="queueBtn">Queue Proposal</button>
+  <button id="executeBtn">Execute Proposal</button>
+
+  <p>Proposal ID: <span id="currentProposalId">-</span></p>
+  <p>Proposal State: <span id="proposalState">-</span></p>
+  <p>Box Value: <span id="boxValue">-</span></p>
+</div>
+
+    <div class="card">
+      <h2>Proposal Result</h2>
+      <p id="proposalResult">No proposal selected</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
