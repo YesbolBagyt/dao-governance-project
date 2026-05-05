@@ -64,3 +64,11 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+## Token Distribution
+
+Total Supply: **1,000,000 GTK**
+
+- **Team (Vesting):** 40% = 400,000 GTK  
+- **Treasury:** 30% = 300,000 GTK  
+- **Community Airdrop:** 20% = 200,000 GTK  
+- **Liquidity:** 10% = 100,000 GTK  
